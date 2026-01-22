@@ -3,7 +3,7 @@ import { useAuth } from "../AuthContext";
 import { useNavigate } from "react-router-dom";
 
 const Protected = () => {
-  const { accessToken, logout, refreshAccessToken } = useAuth();
+  const { accessToken, refreshAccessToken } = useAuth();
   const [data, setData] = useState(null);
   const navigate = useNavigate();
 
@@ -43,7 +43,6 @@ const Protected = () => {
       <h2>Protected Page</h2>
       <p>Welcome! This is dummy protected content.</p>
       <p>{data.message}</p>
-      <button onClick={logout}>Logout</button>
     </div>
   );
 };
