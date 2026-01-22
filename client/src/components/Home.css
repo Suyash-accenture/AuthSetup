@@ -1,0 +1,18 @@
+.home {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  min-height: calc(100vh - 80px); /* Adjust based on nav height */
+}
+
+.home h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  color: #666;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
